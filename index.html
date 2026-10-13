@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LUXE Beauty & Care | Beauty Salon</title>
+
+    <meta
+      name="description"
+      content="Discover beauty, elegance and professional care at LUXE Beauty & Care."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container navbar">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="LUXE Beauty & Care" />
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html" class="active" data-i18n="navHome">Home</a>
+          <a href="services.html" data-i18n="navServices">Services</a>
+          <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+          <a href="about.html" data-i18n="navAbout">About Us</a>
+          <a href="contact.html" data-i18n="navContact">Contact</a>
+        </nav>
+
+        <div class="language-switcher" aria-label="Choose language">
+          <button type="button" data-lang="ka" aria-label="ქართული">KA</button>
+          <button type="button" data-lang="en" aria-label="English">EN</button>
+          <button type="button" data-lang="ru" aria-label="Русский">RU</button>
+        </div>
+
+        <a href="contact.html" class="nav-button" data-i18n="navBook">
+          Book an Appointment
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main>
+      <section class="hero">
+        <div class="hero-image">
+          <img
+            src="images/salon-interior.jpg"
+            alt="Elegant interior of LUXE Beauty & Care salon"
+          />
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="heroEyebrow">
+            YOUR BEAUTY, OUR PASSION
+          </p>
+
+          <h1>
+            <span class="hero-title-first" data-i18n="heroTitleFirst">
+              Discover Your
+            </span>
+            <span data-i18n="heroTitleSecond">Natural Beauty</span>
+          </h1>
+
+          <p class="hero-description" data-i18n="heroDescription">
+            Experience exceptional beauty services in an atmosphere of elegance,
+            comfort and care.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="contact.html" class="button-primary" data-i18n="heroBook">
+              Book Your Visit
+            </a>
+
+            <a
+              href="services.html"
+              class="button-secondary"
+              data-i18n="heroExplore"
+            >
+              Explore Services
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span class="note-line"></span>
+            <span data-i18n="heroNote">BEAUTY • CONFIDENCE • CARE</span>
+          </div>
+        </div>
+
+        <div class="hero-number">01 / 05</div>
+      </section>
+
+      <!-- INTRODUCTION -->
+      <section class="intro section-padding">
+        <div class="section-label" data-i18n="introLabel">WELCOME TO LUXE</div>
+
+        <h2>
+          <span class="intro-title-first" data-i18n="introTitleFirst">
+            Beauty is an experience.
+          </span>
+          <span data-i18n="introTitleSecond">Make it yours.</span>
+        </h2>
+
+        <p data-i18n="introDescription">
+          From personalized skincare to beautiful hair and perfectly polished
+          nails, discover services designed to help you feel your best.
+        </p>
+      </section>
+
+      <!-- SERVICES PREVIEW -->
+      <section class="services-preview section-padding" id="services">
+        <div class="section-heading">
+          <div>
+            <div class="section-label" data-i18n="servicesLabel">
+              WHAT WE OFFER
+            </div>
+            <h2 data-i18n="servicesTitle">Our Services</h2>
+          </div>
+
+          <a href="services.html" class="text-link" data-i18n="servicesViewAll">
+            View All Services ↗
+          </a>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-image">
+              <img
+                src="images/facial-treatment.jpg"
+                alt="Professional facial treatment"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="service-info">
+              <span>01</span>
+              <h3 data-i18n="skinCareTitle">Skin Care</h3>
+              <p data-i18n="skinCareDescription">
+                Personalized care for radiant-looking skin.
+              </p>
+              <a href="services.html" data-i18n="discoverMore">
+                Discover More ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img
+                src="images/hair-styling.jpg"
+                alt="Professional hair styling"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="service-info">
+              <span>02</span>
+              <h3 data-i18n="hairStylingTitle">Hair Styling</h3>
+              <p data-i18n="hairStylingDescription">
+                Beautiful styles made for your personality.
+              </p>
+              <a href="services.html" data-i18n="discoverMore">
+                Discover More ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img
+                src="images/nail-care.jpg"
+                alt="Professional nail care"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="service-info">
+              <span>03</span>
+              <h3 data-i18n="nailCareTitle">Nail Care</h3>
+              <p data-i18n="nailCareDescription">
+                Thoughtful details and polished finishes.
+              </p>
+              <a href="services.html" data-i18n="discoverMore">
+                Discover More ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- BEAUTY BANNER -->
+      <section class="beauty-banner">
+        <img
+          src="images/hair-makeup.jpg"
+          alt="Professional beauty styling"
+          loading="lazy"
+        />
+
+        <div class="beauty-banner-overlay"></div>
+
+        <div class="beauty-banner-content">
+          <p class="eyebrow" data-i18n="bannerEyebrow">YOUR MOMENT OF LUXURY</p>
+
+          <h2>
+            <span class="banner-title-first" data-i18n="bannerTitleFirst">
+              Take time for
+            </span>
+            <span data-i18n="bannerTitleSecond">yourself.</span>
+          </h2>
+
+          <a href="contact.html" class="button-primary" data-i18n="getInTouch">
+            Get in Touch
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-main">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.png" alt="LUXE Beauty & Care" />
+        </a>
+
+        <p data-i18n="footerTagline">A little luxury. A lot of care.</p>
+
+        <a href="contact.html" class="footer-link" data-i18n="footerContact">
+          Contact & Appointments ↗
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="copyright">
+          © 2026 LUXE Beauty & Care. All rights reserved.
+        </p>
+        <p data-i18n="footerMotto">Beauty • Confidence • Care</p>
+      </div>
+    </footer>
+  </body>
+</html>

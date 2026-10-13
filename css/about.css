@@ -1,0 +1,298 @@
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-hero {
+  padding: 105px 20px 95px;
+  text-align: center;
+  background: #eee3d7;
+}
+
+.about-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(48px, 7vw, 82px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.about-hero h1 span {
+  display: block;
+  color: var(--pink);
+  font-style: italic;
+}
+
+.about-hero > p:not(.section-label) {
+  max-width: 530px;
+  margin: 24px auto 30px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 2;
+}
+
+.about-scroll {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--gold);
+  color: var(--gold-dark);
+}
+
+/* STORY SECTION */
+
+.about-story {
+  width: min(1150px, 90%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.about-story-image {
+  position: relative;
+  height: 560px;
+  background: #e9dfd5;
+}
+
+.about-story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 17px 22px;
+  background: #302721;
+  color: white;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.about-story-content h2,
+.about-beauty-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(35px, 4vw, 50px);
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.about-story-content h2 span,
+.about-beauty-content h2 span {
+  display: block;
+  color: var(--gold-dark);
+  font-style: italic;
+}
+
+.about-story-content > p:not(.section-label),
+.about-beauty-content > p:not(.section-label) {
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 2;
+}
+
+.about-text-link {
+  display: inline-block;
+  margin-top: 28px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--pink);
+  color: var(--pink);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/* PHILOSOPHY */
+
+.about-philosophy {
+  padding: 95px 5%;
+  background: #fffdfa;
+}
+
+.philosophy-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.philosophy-heading h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(34px, 4vw, 48px);
+  font-weight: 400;
+}
+
+.philosophy-heading > p:last-child {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.philosophy-grid {
+  width: min(1150px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.philosophy-card {
+  position: relative;
+  padding: 35px 28px;
+  border: 1px solid var(--border);
+  background: var(--cream);
+  transition: transform 0.3s ease;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-5px);
+}
+
+.philosophy-number {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  color: #b9a797;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.philosophy-icon {
+  color: var(--pink);
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.philosophy-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.philosophy-card p {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* BEAUTY SECTION */
+
+.about-beauty {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #e9dfd5;
+}
+
+.about-beauty-image {
+  min-height: 520px;
+  background: #c8b6a7;
+}
+
+.about-beauty-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+}
+
+.about-beauty-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 65px 10%;
+}
+
+.about-beauty-content .button-primary {
+  margin-top: 28px;
+}
+
+/* FINAL CTA */
+
+.about-cta {
+  padding: 85px 20px;
+  text-align: center;
+  background: #302721;
+  color: white;
+}
+
+.about-cta h2 {
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(34px, 5vw, 55px);
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.about-cta h2 span {
+  display: block;
+  color: #e8cda9;
+  font-style: italic;
+}
+
+.about-cta .button-primary {
+  margin-top: 28px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 800px) {
+  .about-story {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-story-image {
+    height: 480px;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .about-beauty {
+    grid-template-columns: 1fr;
+  }
+
+  .about-beauty-image,
+  .about-beauty-image img {
+    min-height: 400px;
+    height: 400px;
+  }
+
+  .about-beauty-content {
+    padding: 55px 7%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 75px 20px;
+  }
+
+  .about-story-image {
+    height: 380px;
+  }
+
+  .about-philosophy {
+    padding: 70px 5%;
+  }
+
+  .philosophy-card {
+    padding: 30px 23px;
+  }
+
+  .about-beauty-image,
+  .about-beauty-image img {
+    height: 340px;
+    min-height: 340px;
+  }
+
+  .about-cta {
+    padding: 70px 20px;
+  }
+}

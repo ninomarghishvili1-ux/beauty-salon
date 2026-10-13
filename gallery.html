@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gallery | LUXE Beauty & Care</title>
+    <meta
+      name="description"
+      content="Explore the beauty, treatments and atmosphere of LUXE Beauty & Care."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container navbar">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="LUXE Beauty & Care" />
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html" data-i18n="navHome">Home</a>
+          <a href="services.html" data-i18n="navServices">Services</a>
+          <a href="gallery.html" class="active" data-i18n="navGallery"
+            >Gallery</a
+          >
+          <a href="about.html" data-i18n="navAbout">About Us</a>
+          <a href="contact.html" data-i18n="navContact">Contact</a>
+        </nav>
+
+        <div class="language-switcher" aria-label="Choose language">
+          <button type="button" data-lang="ka" aria-label="ქართული">KA</button>
+          <button type="button" data-lang="en" aria-label="English">EN</button>
+          <button type="button" data-lang="ru" aria-label="Русский">RU</button>
+        </div>
+
+        <a href="contact.html" class="nav-button" data-i18n="navBook">
+          Book an Appointment
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- GALLERY HERO -->
+      <section class="gallery-hero">
+        <p class="section-label" data-i18n="galleryHeroLabel">
+          A WORLD OF BEAUTY
+        </p>
+
+        <h1>
+          <span data-i18n="galleryHeroFirst">Our</span>
+          <span data-i18n="galleryHeroSecond">Gallery</span>
+        </h1>
+
+        <p data-i18n="galleryHeroDescription">
+          A glimpse into our world of beauty, thoughtful details and moments of
+          self-care.
+        </p>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="gallery-section">
+        <div class="gallery-heading">
+          <p class="section-label" data-i18n="gallerySectionLabel">
+            THE LUXE COLLECTION
+          </p>
+
+          <h2 data-i18n="gallerySectionTitle">Beauty in Every Detail</h2>
+
+          <p data-i18n="gallerySectionDescription">
+            Explore our salon, treatments and signature looks.
+          </p>
+        </div>
+
+        <div class="gallery-filters" aria-label="Gallery categories">
+          <button
+            class="filter-btn active"
+            data-filter="all"
+            data-i18n="filterAll"
+            type="button"
+          >
+            All
+          </button>
+
+          <button
+            class="filter-btn"
+            data-filter="salon"
+            data-i18n="filterSalon"
+            type="button"
+          >
+            Our Salon
+          </button>
+
+          <button
+            class="filter-btn"
+            data-filter="skin"
+            data-i18n="filterSkin"
+            type="button"
+          >
+            Skin Care
+          </button>
+
+          <button
+            class="filter-btn"
+            data-filter="hair"
+            data-i18n="filterHair"
+            type="button"
+          >
+            Hair
+          </button>
+
+          <button
+            class="filter-btn"
+            data-filter="nails"
+            data-i18n="filterNails"
+            type="button"
+          >
+            Nails
+          </button>
+        </div>
+
+        <div class="gallery-grid">
+          <button
+            class="gallery-card"
+            data-category="salon"
+            type="button"
+            aria-label="View salon interior"
+          >
+            <img
+              src="images/salon-interior.jpg"
+              alt="Elegant LUXE salon interior"
+              loading="lazy"
+            />
+            <span class="gallery-overlay" data-i18n="gallerySalon">
+              Our Salon ↗
+            </span>
+          </button>
+
+          <button
+            class="gallery-card"
+            data-category="skin"
+            type="button"
+            aria-label="View facial treatment"
+          >
+            <img
+              src="images/facial-treatment.jpg"
+              alt="Professional facial treatment"
+              loading="lazy"
+            />
+            <span class="gallery-overlay" data-i18n="gallerySkin">
+              Skin Care ↗
+            </span>
+          </button>
+
+          <button
+            class="gallery-card"
+            data-category="hair"
+            type="button"
+            aria-label="View hair styling"
+          >
+            <img
+              src="images/hair-styling.jpg"
+              alt="Elegant professional hair styling"
+              loading="lazy"
+            />
+            <span class="gallery-overlay" data-i18n="galleryHair">
+              Hair Styling ↗
+            </span>
+          </button>
+
+          <button
+            class="gallery-card"
+            data-category="hair"
+            type="button"
+            aria-label="View hairstyling inspiration"
+          >
+            <img
+              src="images/hair-styling.jpg"
+              alt="Beautiful styled hair"
+              loading="lazy"
+            />
+            <span class="gallery-overlay" data-i18n="galleryHairInspiration">
+              Hair Inspiration ↗
+            </span>
+          </button>
+
+          <button
+            class="gallery-card"
+            data-category="skin"
+            type="button"
+            aria-label="View skin treatment"
+          >
+            <img
+              src="images/skin-treatment.jpg"
+              alt="Advanced cosmetic skin treatment"
+              loading="lazy"
+            />
+            <span class="gallery-overlay" data-i18n="gallerySkinTreatments">
+              Skin Treatments ↗
+            </span>
+          </button>
+
+          <button
+            class="gallery-card"
+            data-category="nails"
+            type="button"
+            aria-label="View nail care"
+          >
+            <img
+              src="images/nail-care.jpg"
+              alt="Professional manicure and nail care"
+              loading="lazy"
+            />
+            <span class="gallery-overlay" data-i18n="galleryNails">
+              Nail Care ↗
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- GALLERY CTA -->
+      <section class="gallery-cta">
+        <p class="section-label" data-i18n="galleryCtaLabel">
+          YOUR BEAUTY JOURNEY
+        </p>
+
+        <h2>
+          <span data-i18n="galleryCtaFirst">Every detail begins</span>
+          <span data-i18n="galleryCtaSecond">with you.</span>
+        </h2>
+
+        <p data-i18n="galleryCtaDescription">
+          Discover the LUXE experience for yourself.
+        </p>
+
+        <a href="contact.html" class="button-primary" data-i18n="heroBook">
+          Book Your Visit
+        </a>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-main">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.png" alt="LUXE Beauty & Care" />
+        </a>
+
+        <p data-i18n="footerTagline">A little luxury. A lot of care.</p>
+
+        <a href="contact.html" class="footer-link" data-i18n="footerContact">
+          Contact & Appointments ↗
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="copyright">
+          © 2026 LUXE Beauty & Care. All rights reserved.
+        </p>
+
+        <p data-i18n="footerMotto">Beauty • Confidence • Care</p>
+      </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Close image">
+        &times;
+      </button>
+
+      <button class="lightbox-prev" type="button" aria-label="Previous image">
+        &#10094;
+      </button>
+
+      <img id="lightbox-image" src="" alt="" />
+
+      <button class="lightbox-next" type="button" aria-label="Next image">
+        &#10095;
+      </button>
+    </div>
+
+    <script src="js/gallery.js"></script>
+  </body>
+</html>

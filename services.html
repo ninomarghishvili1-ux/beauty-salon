@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Our Services | LUXE Beauty & Care</title>
+
+    <meta
+      name="description"
+      content="Explore beauty and personal care services at LUXE Beauty & Care."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container navbar">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="LUXE Beauty & Care" />
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html" data-i18n="navHome">Home</a>
+          <a href="services.html" class="active" data-i18n="navServices"
+            >Services</a
+          >
+          <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+          <a href="about.html" data-i18n="navAbout">About Us</a>
+          <a href="contact.html" data-i18n="navContact">Contact</a>
+        </nav>
+
+        <div class="language-switcher" aria-label="Choose language">
+          <button type="button" data-lang="ka" aria-label="ქართული">KA</button>
+          <button type="button" data-lang="en" aria-label="English">EN</button>
+          <button type="button" data-lang="ru" aria-label="Русский">RU</button>
+        </div>
+
+        <a href="contact.html" class="nav-button" data-i18n="navBook">
+          Book an Appointment
+        </a>
+      </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <main>
+      <section class="services-hero">
+        <p class="section-label" data-i18n="servicesHeroLabel">
+          THE LUXE EXPERIENCE
+        </p>
+
+        <h1>
+          <span class="services-title-first" data-i18n="servicesHeroFirst"
+            >Our Beauty</span
+          >
+          <span data-i18n="servicesHeroSecond">Services</span>
+        </h1>
+
+        <p data-i18n="servicesHeroDescription">
+          Thoughtful treatments, beautiful details and personalized care — all
+          in one place.
+        </p>
+      </section>
+
+      <!-- SERVICE CATEGORIES -->
+      <section class="service-menu">
+        <div class="service-menu-heading">
+          <p class="section-label" data-i18n="serviceMenuLabel">
+            DISCOVER YOUR FAVORITES
+          </p>
+          <h2 data-i18n="serviceMenuTitle">Designed Around You</h2>
+          <p data-i18n="serviceMenuDescription">
+            Explore our selection of beauty and care services.
+          </p>
+        </div>
+
+        <div class="service-list">
+          <!-- SKIN CARE -->
+          <article class="service-item">
+            <div class="service-item-image">
+              <img
+                src="images/facial-treatment.jpg"
+                alt="Facial skincare treatment"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="service-item-content">
+              <span class="service-number"
+                >01 / <span data-i18n="categorySkin">SKIN</span></span
+              >
+
+              <h3 data-i18n="skinCareTitle">Skin Care</h3>
+
+              <p data-i18n="skinCareDescription">
+                Personalized facial care for a fresh, hydrated and
+                radiant-looking complexion.
+              </p>
+
+              <div class="price-row">
+                <span data-i18n="facialCleansing">Facial Cleansing</span>
+                <span>80 ₾</span>
+              </div>
+
+              <div class="price-row">
+                <span data-i18n="hydratingFacial">Hydrating Facial</span>
+                <span>100 ₾</span>
+              </div>
+
+              <div class="price-row">
+                <span data-i18n="premiumFacial">Premium Facial Care</span>
+                <span>150 ₾</span>
+              </div>
+
+              <a
+                href="contact.html"
+                class="service-book"
+                data-i18n="bookThisService"
+              >
+                Book This Service ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- HAIR -->
+          <article class="service-item">
+            <div class="service-item-image">
+              <img
+                src="images/hair-styling.jpg"
+                alt="Professional hair styling"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="service-item-content">
+              <span class="service-number"
+                >02 / <span data-i18n="categoryHair">HAIR</span></span
+              >
+
+              <h3 data-i18n="hairStylingTitle">Hair Styling</h3>
+
+              <p data-i18n="hairServiceDescription">
+                Effortless elegance, beautiful curls and styles tailored to your
+                occasion.
+              </p>
+
+              <div class="price-row">
+                <span data-i18n="blowout">Blowout</span>
+                <span>50 ₾</span>
+              </div>
+
+              <div class="price-row">
+                <span data-i18n="hairCurling">Hair Curling</span>
+                <span>70 ₾</span>
+              </div>
+
+              <div class="price-row">
+                <span data-i18n="specialOccasionStyling"
+                  >Special Occasion Styling</span
+                >
+                <span>120 ₾</span>
+              </div>
+
+              <a
+                href="contact.html"
+                class="service-book"
+                data-i18n="bookThisService"
+              >
+                Book This Service ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- NAILS -->
+          <article class="service-item">
+            <div class="service-item-image">
+              <img
+                src="images/nail-care.jpg"
+                alt="Professional manicure"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="service-item-content">
+              <span class="service-number"
+                >03 / <span data-i18n="categoryNails">NAILS</span></span
+              >
+
+              <h3 data-i18n="nailCareTitle">Nail Care</h3>
+
+              <p data-i18n="nailServiceDescription">
+                Refined nail care with a polished, elegant finish.
+              </p>
+
+              <div class="price-row">
+                <span data-i18n="classicManicure">Classic Manicure</span>
+                <span>40 ₾</span>
+              </div>
+
+              <div class="price-row">
+                <span data-i18n="gelPolish">Gel Polish</span>
+                <span>60 ₾</span>
+              </div>
+
+              <div class="price-row">
+                <span data-i18n="manicureGel">Manicure & Gel Polish</span>
+                <span>80 ₾</span>
+              </div>
+
+              <a
+                href="contact.html"
+                class="service-book"
+                data-i18n="bookThisService"
+              >
+                Book This Service ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- ADVANCED SKIN TREATMENTS -->
+          <article class="service-item">
+            <div class="service-item-image">
+              <img
+                src="images/skin-treatment.jpg"
+                alt="Advanced cosmetic skin treatment"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="service-item-content">
+              <span class="service-number"
+                >04 /
+                <span data-i18n="categoryAdvanced">ADVANCED CARE</span></span
+              >
+
+              <h3 data-i18n="advancedSkinTitle">Advanced Skin Treatments</h3>
+
+              <p data-i18n="advancedSkinDescription">
+                A selection of cosmetic treatments tailored to individual skin
+                needs.
+              </p>
+
+              <div class="price-row">
+                <span data-i18n="expressTreatment">Express Skin Treatment</span>
+                <span>100 ₾</span>
+              </div>
+
+              <div class="price-row">
+                <span data-i18n="specializedTreatment"
+                  >Specialized Treatment</span
+                >
+                <span>180 ₾</span>
+              </div>
+
+              <div class="price-row">
+                <span data-i18n="premiumTreatment">Premium Treatment</span>
+                <span>250 ₾</span>
+              </div>
+
+              <a
+                href="contact.html"
+                class="service-book"
+                data-i18n="bookThisService"
+              >
+                Book This Service ↗
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <p class="price-note" data-i18n="priceNote">
+          * All prices shown are illustrative demo prices. Actual prices may
+          vary depending on the service.
+        </p>
+      </section>
+
+      <!-- CTA -->
+      <section class="services-cta">
+        <p class="section-label" data-i18n="servicesCtaLabel">
+          YOUR MOMENT STARTS HERE
+        </p>
+
+        <h2>
+          <span class="services-cta-first" data-i18n="servicesCtaFirst"
+            >Ready for a little</span
+          >
+          <span data-i18n="servicesCtaSecond">luxury?</span>
+        </h2>
+
+        <p data-i18n="servicesCtaDescription">
+          Get in touch to plan your next beauty appointment.
+        </p>
+
+        <a href="contact.html" class="button-primary" data-i18n="heroBook">
+          Book Your Visit
+        </a>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-main">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.png" alt="LUXE Beauty & Care" />
+        </a>
+
+        <p data-i18n="footerTagline">A little luxury. A lot of care.</p>
+
+        <a href="contact.html" class="footer-link" data-i18n="footerContact">
+          Contact & Appointments ↗
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="copyright">
+          © 2026 LUXE Beauty & Care. All rights reserved.
+        </p>
+        <p data-i18n="footerMotto">Beauty • Confidence • Care</p>
+      </div>
+    </footer>
+  </body>
+</html>
